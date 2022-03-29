@@ -14,8 +14,10 @@ public class Main {
         for (File file : filesSrcDir) {
             service.execute(() -> {
                 try {
-//                    ImageResizer.methodThumbnailator(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
-                    ImageResizer.methodImgscalr(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
+//                    ImageResizer.methodThumbnail(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
+//                    ImageResizer.methodImgscalr(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
+//                    ImageResizer.methodGraphics2D(file, Size.STORIES.getWidth(), Size.STORIES.getHeight(), DST_FOLDER);
+//                    ImageResizer.methodScaledInstance(file, Size.PORTRAIT.getWidth(), Size.PORTRAIT.getHeight(), DST_FOLDER);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
