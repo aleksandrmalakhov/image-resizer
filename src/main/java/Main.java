@@ -14,7 +14,8 @@ public class Main {
         for (File file : filesSrcDir) {
             service.execute(() -> {
                 try {
-                    ImageResizer.startResizer(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
+//                    ImageResizer.methodThumbnailator(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
+                    ImageResizer.methodImgscalr(file, Size.LENTA.getWidth(), Size.LENTA.getHeight(), DST_FOLDER);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
