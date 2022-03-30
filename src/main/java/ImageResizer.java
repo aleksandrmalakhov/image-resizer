@@ -14,6 +14,7 @@ public class ImageResizer {
 
     public static void methodThumbnail(File file, int width, int height, String dst) {
         try {
+            //new branch 'thumbnail' created
             Thumbnails.of(file)
                     .size(width, height)
                     .outputFormat("jpg")
