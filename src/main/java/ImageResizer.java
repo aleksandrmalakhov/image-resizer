@@ -43,7 +43,7 @@ public class ImageResizer {
     }
 
     public static void methodGraphics2D(File file, int width, int height, String dst) throws IOException {
-        //conflict 2
+        //conflict 1
         BufferedImage image = ImageIO.read(file);
 
         float scaleX = (float) width / image.getWidth();
