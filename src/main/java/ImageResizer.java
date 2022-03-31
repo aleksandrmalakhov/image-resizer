@@ -55,6 +55,7 @@ public class ImageResizer {
                 BufferedImage.TYPE_INT_ARGB;
 
         boolean scaleDown = scale < 1;
+        // mod add
 
         if (scaleDown) {
             int currentW = image.getWidth();
