@@ -14,6 +14,7 @@ public class ImageResizer {
 
     public static void methodThumbnail(File file, int width, int height, String dst) {
         try {
+            //new branch 'thumbnail' created
             Thumbnails.of(file)
                     .size(width, height)
                     .outputFormat("jpg")
@@ -42,7 +43,6 @@ public class ImageResizer {
     }
 
     public static void methodGraphics2D(File file, int width, int height, String dst) throws IOException {
-        //conflict 8
         BufferedImage image = ImageIO.read(file);
 
         float scaleX = (float) width / image.getWidth();
